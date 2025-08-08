@@ -18,6 +18,18 @@ int main(){
     cout << "\n" << ref_a;
     cout << "Reference";
 
+    // CREATING REFERENCE
+    string food = "rice"; // food variable 
+    string &meal = food; // reference to food
+    cout << meal ;
+
+    // CREATING POINTER
+    string name = "eniola";
+    string* oruko = &name;
+    cout << *oruko;
+
+
+
     int b = 10;
     increment(b);
 }
