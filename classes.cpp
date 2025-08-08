@@ -52,4 +52,11 @@ int main(){
 
     cout << literature.author ;
 
+    // DIFFERENCE BETWEEN A STRUCT AND A CLASS 
+    // The only difference is in their visiblity.
+    // A struct is public by default, while the class is private by default.
+
+
+    
+
 }

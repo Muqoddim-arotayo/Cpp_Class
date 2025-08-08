@@ -3,16 +3,24 @@
 using namespace std;
 
 
-class car {                 // The class
-    public:                 // Access specifier
-        void move (){       // Inside class definition
-            cout << "\n" << "vroom vroom";
+class Dog {
+    public:
+        void bark(int speed){
+            cout << speed << "Woof!\n";
         }
-        void stop();
 };
 
-void stop (){
-    cout << "\nShrrrrr ";
+class car {                 // The class
+    public:                 // Access specifier
+        void move (int speed){       // Inside class definition
+            cout << speed << "vroom vroom";
+        }
+        void stop_1(int speed);
+};
+
+// Method/function definition outside the class
+void car::stop_1(int speed){
+    cout << "\n" << speed << "Shrrr shrr ";
 }
 
 int main (){
@@ -21,10 +29,12 @@ int main (){
     // 1. Inside class definition
     // 2. outside class definition
 
-    car camry;
-    camry.move();
-    camry.stop();
-    return 0;
+    Dog bingo;
+    bingo.bark(900);
 
+    car camry;
+    camry.move(800);
+    camry.stop_1(-800);
+    return 0;
 
 }
