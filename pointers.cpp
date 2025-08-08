@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstring>
 using namespace std;
 
 int main(){
@@ -42,10 +43,17 @@ int main(){
     cout << "\n" << my_name;
 
 
-    char* buffer = new char[12];
-    *buffer =  'operator';
-    cout << "\n" << sizeof(buffer) ;
-    cout << "\n" << *buffer;
+    char* buffer = new char[8];
+    memset(buffer, 0, 8);
+    cout << "\n" << sizeof(buffer);
+    cout << "\n" << &buffer;
+
+    char** my_ptr_ptr = &buffer;
+
+    cout << "\n" << &my_ptr_ptr;
+
+    delete[] buffer;
+    // cout << "\n" << buffer;
 
 }
 
