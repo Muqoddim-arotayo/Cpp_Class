@@ -3,15 +3,14 @@
 using namespace std;
 
 class Log {
-    private:
-    int m_LogLevel;
     public:
-    void SetLevel(int level){
-        m_LogLevel = level;
+    void SetLevel (int level){
+        
     }
-    void Warn(const char* message){
+    void Warn (const char* message){
+        
+    }
 
-    }
 };
 
 int main (){
@@ -20,6 +19,4 @@ int main (){
     Log log;
     log.SetLevel(LogLevelWarning);
     log.Warn("Hello !");
-    cin.get();
-    
 }
