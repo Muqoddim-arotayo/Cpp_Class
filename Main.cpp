@@ -2,9 +2,13 @@
 #include "log.h"
 using namespace std;
 
+int s_Variable = 10;
+void function (){
+    
+}
+
 int main(){
-    int var = 8;
-    void* ptr = &var;
-    cout << "Hello world";
-    cin.get();
+
+    cout << s_Variable << endl;
+
 }
