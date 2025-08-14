@@ -2,8 +2,17 @@
 #include <string>
 using namespace std;
 
+static int s_five = 5;
+
 struct Entity {
     static int x,y ;
+    // - Non-static member: Every student (object) has their own notebook.
+    // - Static member: There’s one shared whiteboard for the whole class.
+    // Static is incredibly useful for static data that doesn't change between class instances,
+    // but that we actually want to use in our classes.
+
+
+
     void print (){
         cout << x << " , " << y << endl;
     }

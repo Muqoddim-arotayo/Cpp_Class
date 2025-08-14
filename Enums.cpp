@@ -13,6 +13,7 @@ int c = 2;
 
 int main (){
     // An enum is a special type that represents a group of constants (unchangeable values).
+    // Enum is a set of value, it is a way of giving name to a value 
     cout << "ENUMS";
 
     Example value = C;
