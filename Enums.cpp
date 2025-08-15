@@ -2,9 +2,8 @@
 #include <string>
 using namespace std;
 
-
 enum Example : unsigned char {
-    A = 0,B = 4,C =5
+    A, B, C
 };
 
 int a = 0;
@@ -14,11 +13,15 @@ int c = 2;
 int main (){
     // An enum is a special type that represents a group of constants (unchangeable values).
     // Enum is a set of value, it is a way of giving name to a value 
+
+    // Whenever you want a set of value that you want to represent numerically, an enum is the way to go.
     cout << "ENUMS";
 
-    Example value = C;
+    Example value = A;
 
-    if (value == B){
-
+    if (value == A){
+        cout << "Yes it is !!";
     }
+
+    
 }
