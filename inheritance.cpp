@@ -73,7 +73,7 @@ class Entity {
 };
 
 class player : public Entity {
-    public:
+    public: 
         const char* Name;
         float X,Y;
 
