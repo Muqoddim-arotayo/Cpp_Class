@@ -3,7 +3,7 @@
 using namespace std;
 
 class Log {
-    public:
+    public: 
         enum Level {
             LevelError = 0, LevelWarning, LevelInfo
         };
