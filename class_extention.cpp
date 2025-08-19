@@ -36,7 +36,7 @@ class Log {
         }
 
 };
-
+  
 int main (){
     // CREATING A LOG CLASS
 
