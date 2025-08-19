@@ -42,7 +42,7 @@ int main(){
     cout << "\n" << *my_name_ptr;
     cout << "\n" << my_name;
 
-
+    
     char* buffer = new char[8];
     memset(buffer, 0, 8);
     cout << "\n" << sizeof(buffer);
